@@ -10,4 +10,20 @@ void main(List<String> args) {
   int minus(int a, int b) => a - b;
 
   print(minus(10, 5));
+
+  // cascade notation
+  var manh = Persion()
+    ..name = 'Manh'
+    ..age = 32;
+
+  manh.describe();
+}
+
+class Persion {
+  String? name;
+  int? age;
+
+  void describe() {
+    print('${name} ${age}');
+  }
 }

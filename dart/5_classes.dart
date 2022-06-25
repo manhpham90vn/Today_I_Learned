@@ -24,6 +24,8 @@ class Persion {
   // named constructor
   Persion.Type1(this.name);
 
+  Persion.fromJson(this.name) {}
+
   // method
   void describe() {
     print('name: ${name} and age ${age}');
