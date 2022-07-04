@@ -5,6 +5,11 @@ fun main() {
 
     val data = DataType.STRING
     print(data)
+
+    print("\n")
+
+    var state = ToggleState.ON
+    print(state.getRawValue())
 }
 
 enum class LoadingState {
@@ -15,4 +20,19 @@ enum class LoadingState {
 enum class DataType(val raw: Int) {
     STRING(1),
     INT(2)
+}
+
+enum class ToggleState {
+    ON {
+        override fun getRawValue(): String {
+            return "ON"
+        }
+    },
+    OFF {
+        override fun getRawValue(): String {
+            return "OFF"
+        }
+    };
+
+    abstract fun getRawValue(): String
 }

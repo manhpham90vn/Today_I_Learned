@@ -6,7 +6,12 @@ fun main() {
     b = "manh pham"
 
     print(a)
+    print("\n")
     print(b)
+
+    print("\n")
+    val manh: String? = "manh"
+    print(manh)
 }
 
 
